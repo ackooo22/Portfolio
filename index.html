@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css" type="text/css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <!-- links that only take the viewer to a certain section of the page  -->
+        <div class="nav-links">
+            <a href="#about-me-section">&lt; About /&gt;</a>
+            <a href="#projects-section">&lt; Projects /&gt;</a>
+            <a href="#contact-information">&lt; Contact /&gt;</a>
+        </div>
+        <!-- Button that opens a form to contact or take the person to the bottom of the page -->
+        <button class="contact-form-button primary-btn"><a href="#contact-information">Contact me</a></button>
+    </nav>
+
+    <main>
+        <section class="hero-banner-section">
+            <!-- Left side with a short description of the work i do and 2 cta buttons -->
+            <div class="left-section-information">
+                
+                <!-- Main Heading with a description of the work i do -->
+                <h1>&lt;h1&gt; Hello World &lt;/h1&gt;</h1>
+                
+                <p>Whether it is designing or coding your project, I am the person for the job. With patience and a well-trained eye, I will design the best-looking website.</p>
+                
+                <p>My coding skills allow me to professionally develop your website, ensuring it meets the highest standards.</p>
+                
+                <!-- div with the 2 cta buttons -->
+                <div class="left-side-buttons">
+                    <button class="hire-me primary-btn">Hire me</button>
+                    <button class="view-portfolio secondary-btn">View Portfolio</button>
+                </div>
+            </div>
+
+            <!-- Right side with an img and name of me and my job title -->
+            <div class="right-section-information">
+                <!-- <img src="" alt=""> -->
+                <h2>Aleksandar Krstevski</h2>
+                <p>Web Developer</p>
+                <span></span>
+            </div>
+
+        </section>
+
+        <!-- Icons that represent the different technologies i use -->
+
+        <section class="stack-icons">
+            <div class="spinning-icons">
+                <img src="assets/Images/icons/icons8-figma (1).svg" alt="Figma icon">
+                <img src="assets/Images/icons/icons8-photoshop.svg" alt="Photoshop icon">
+                <img src="assets/Images/icons/icons8-illustrator.svg" alt="Illustrator icon">
+                <img src="assets/Images/icons/icons8-visual-studio-code-2019.svg" alt="VS Code icon">
+                <img src="assets/Images/icons/icons8-html.svg" alt="HTML5 icon">
+                <img src="assets/Images/icons/icons8-css.svg" alt="CSS3 icon">
+                <img src="assets/Images/icons/icons8-javascript-logo.svg" alt="JavaScript icon">
+                <img src="assets/Images/icons/icons8-react-js.svg" alt="React icon">
+                <img src="assets/Images/icons/icons8-tailwind-css.svg" alt="Tailwind icon">
+            </div>
+        </section>
+
+        <!-- About me section -->
+        <section class="about-me-section" id="about-me-section">
+            <div class="img-of-me">
+
+            </div>
+            <div class="about-me-info">
+                <h2>About me</h2>
+                <p>Hello, I'm Aleksandar, a young and motivated web developer based in North Macedonia, Europe. With my fresh and modern approach to web design, I can help you build the best website to meet today's standards.</p>
+
+                <div class="info-btn">
+                    <div class="projects counter">
+                        <h3>Projects</h3>
+                        <span></span>
+                        <p>+5</p>
+                    </div>
+                    <div class="stack counter">
+                        <h3>Stack</h3>
+                        <span></span>
+                        <p>+5</p>
+                    </div>
+                    <button class="primary-btn"><a href="assets/Resume/Aleksandars_Resume.pdf" target="_blank">Download CV</a></button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Projects section -->
+        <section class="projects-section" id="projects-section">
+            <div class="cards-projects">
+                <!-- Project 1 -->
+                <div class="project project-1">
+                    <div class="img"></div>
+                    <div class="link-name">
+                        <h3>E-commerce Shop Project </h3>
+                        <a href="#">Visit Page</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project project-2">
+                    <div class="img"></div>
+                    <div class="link-name">
+                        <h3>Middle School Website</h3>
+                        <a href="assets/website/dimitar-miladinov-main/landing page/Landing.html" target="_blank">Visit Page</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project project-3">
+                    <div class="img">
+                    </div>
+                    <div class="link-name">
+                        <h3>CineWave Movie Website</h3>
+                        <a href="assets/website/Project/landing.html" target="_blank">Visit Page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="left-side-contact-form">
+            <h2>Contact me</h2>
+            <form>
+                
+                <!-- top part of the form -->
+                <div class="name-input">
+                    <span>
+                        <label for="first-name">Name</label>
+                        <br>
+                        <input type="text" name="first-name" class="contact-input">
+                    </span>
+                    <span>
+                        <label for="last-name">Surname</label>
+                        <br>
+                        <input type="text" name="last-name" class="contact-input">
+                    </span>
+                </div>
+                
+                <!-- bottom part of the form -->
+                <div class="contact-input-bottom">
+                    <span>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" class="contact-input">
+                    </span>
+                    <span>
+                        <label for="phone">Phone</label>
+                        <br>
+                        <input type="tel" class="contact-input" name="phone">
+                    </span>
+                </div>
+                
+                <!-- Message input -->
+                <label for="message" class="message-label">Message</label>
+                <br>
+                <textarea class="contact-input textarea" name="message"></textarea>
+
+                <!-- Buttons -->
+                <div class="button-input">
+                    <button class="primary-btn"><a href="mailto:aleksandark121@gmail.com"></a>Submit</button>
+                    <input type="reset" class="secondary-btn" value="Clear">
+                </div>
+            </form>
+        </div>
+        <div class="right-side-contact-information" id="contact-information">
+            <h2>Contact information</h2>
+            
+            <!-- Email and phone number -->
+            <div class="email-phone-info">
+                <!-- Phone -->
+                <div class="phone-info">
+                    <img src="assets/Images/icons/PhoneIcon.png" alt="Phone icon">
+                    <a href="tel:+38970289939">+389 70-289/939</a>
+                </div>
+                <!-- Email -->
+                <div class="email-info">
+                    <img src="assets/Images/icons/EmailIcon.png" alt="Email icon">
+                    <a href="mailto:aleksandark121@gmail.com">aleksandark121@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Social icons -->
+            <div class="social-icons">
+                <h2>Follow me on</h2>
+                <div class="social-icons-container">
+                    <a href="https://www.instagram.com/ackooo22/"><img src="assets/Images/icons/icons8-instagram (1).svg" alt="Instagram link"></a>
+                    <a href="https://x.com/AckOOO23" target="_blank"><img src="assets/Images/icons/icons8-twitter (1).svg" alt="Twitter link"></a>
+                    <a href="https://github.com/ackooo22" target="_blank"><img src="assets/Images/icons/icons8-github.svg" alt="Github link"></a>
+                    <a href="https://www.behance.net/aleksankrstevs4" target="_blank"><img src="assets/Images/icons/icons8-behance.svg" alt="Behance link"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

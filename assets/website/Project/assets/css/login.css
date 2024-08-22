@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --maincolor: #351D4D;
+  --maincolor75: #A67DCE;
+  --secondarycolor: #F2A0D5;
+  --buttoncolor: rgb(255, 186, 222);
+  --font: "Nunito", sans-serif ;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--maincolor75);
+  border-radius: 10px;
+  border: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #260835;
+}
+
+body {
+  background-image: url(../Img/loginBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+main section {
+  background-color: hsla(270, 45%, 21%, 0.6);
+  width: 500px;
+  height: 500px;
+  display: grid;
+  place-items: center;
+}
+main section h1 {
+  color: white;
+  font-size: 2.5em;
+}
+main section .login {
+  width: 70%;
+  display: grid;
+  gap: 5px;
+}
+main section .login p {
+  color: white;
+  font-size: 1.2em;
+}
+main section .login input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+}
+main section .password {
+  width: 70%;
+  display: grid;
+  gap: 5px;
+}
+main section .password .password-p {
+  color: white;
+  font-size: 1.2em;
+}
+main section .password input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+}
+main section .password .remember-forgot {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+main section .password .remember-forgot .radio {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+main section .password .remember-forgot .radio .remember {
+  color: white;
+  width: 240px;
+  font-size: 1.2em;
+}
+main section .password .remember-forgot .radio input {
+  width: 30px;
+  height: 30px;
+}
+main section .password .remember-forgot button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+main section .buttons {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  place-items: center;
+}
+main section .buttons button {
+  width: 40%;
+  height: 40px;
+  background-color: var(--secondarycolor);
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+main section .buttons .buttons:hover {
+  background-color: rgb(5, 4, 5);
+}/*# sourceMappingURL=login.css.map */

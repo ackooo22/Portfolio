@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 2em;
+  width: 90%;
+}
+
+.secondary-btn {
+  border: 2px solid #E6B282;
+  background-color: transparent;
+  padding: 0 2em;
+  height: 2.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #E6B282;
+  border-radius: 20px;
+}
+.secondary-btn:hover {
+  background-color: #E6B282;
+  color: #1C1C1C;
+  transition: ease-in-out 0.4s;
+}
+.secondary-btn a {
+  text-decoration: none;
+  color: #E6B282;
+}
+.secondary-btn a:hover {
+  color: #1C1C1C;
+}
+
+.primary-btn {
+  border: none;
+  background-image: radial-gradient(circle at center, #E6B282 0%, #806348 100%);
+  padding: 0 2em;
+  height: 2.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #1C1C1C;
+  border-radius: 20px;
+}
+.primary-btn:hover {
+  background-image: radial-gradient(circle at center, #E89549 0%, #825329 100%);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 0;
+}
+nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  width: 100%;
+  color: #E6B282;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+nav .nav-links a {
+  text-decoration: none;
+  color: #E6B282;
+}
+nav .nav-links a:hover {
+  color: #E89549;
+}
+nav .contact-form-button {
+  width: 200px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+  width: 100%;
+  gap: 8em;
+}
+main .hero-banner-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  height: 70vh;
+  padding: 2em 0;
+}
+main .hero-banner-section .left-section-information {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 2em;
+}
+main .hero-banner-section .left-section-information h1 {
+  font-family: "Black Ops One", cursive;
+  font-size: 3em;
+}
+main .hero-banner-section .left-section-information p {
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 45%;
+}
+main .hero-banner-section .left-section-information .left-side-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+main .hero-banner-section .right-section-information {
+  background-image: url(../Images/Untitled-1.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+main .hero-banner-section .right-section-information h2 {
+  font-family: "Black Ops One", cursive;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #038C25;
+}
+main .hero-banner-section .right-section-information p {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+main .hero-banner-section .right-section-information span {
+  width: 30%;
+  height: 4px;
+  background-color: #038C25;
+}
+main .stack-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  width: 100%;
+}
+main .stack-icons .spinning-icons {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: 3px solid #E6B282;
+  border-right: 3px solid #E6B282;
+}
+main .stack-icons .spinning-icons img {
+  width: 100px;
+}
+main .about-me-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2em;
+  width: 100%;
+}
+main .about-me-section .img-of-me {
+  width: 40%;
+  height: 60vh;
+}
+main .about-me-section .about-me-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+main .about-me-section .about-me-info h2 {
+  font-family: "Black Ops One", cursive;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+main .about-me-section .about-me-info p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 80%;
+  line-height: 1.5em;
+}
+main .about-me-section .about-me-info .info-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  width: 100%;
+}
+main .about-me-section .about-me-info .info-btn .counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  gap: 3px;
+}
+main .about-me-section .about-me-info .info-btn .counter h3 {
+  font-family: "Black Ops One", cursive;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+main .about-me-section .about-me-info .info-btn .counter span {
+  width: 100%;
+  height: 3px;
+  background-color: #038C25;
+}
+main .about-me-section .about-me-info .info-btn .counter p {
+  font-family: "Black Ops One", cursive;
+  font-size: 2.5em;
+  font-weight: 500;
+  width: 80%;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .projects-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .projects-section .cards-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6em;
+  width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .projects-section .cards-projects .project-1 .img {
+  background-image: url(../Images/projects/e-commerce.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  border-radius: 40px;
+}
+main .projects-section .cards-projects .project-2 .img {
+  background-image: url(../Images/projects/MiddleSchool.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  border-radius: 40px;
+}
+main .projects-section .cards-projects .project-3 .img {
+  background-image: url(../Images/projects/Cinewave.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  border-radius: 40px;
+}
+main .projects-section .cards-projects .project {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main .projects-section .cards-projects .project .link-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .projects-section .cards-projects .project .link-name h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  background-color: #FFFFFF;
+  color: #1C1C1C;
+  padding: 0.5em;
+  border-radius: 20px;
+}
+main .projects-section .cards-projects .project .link-name a {
+  color: #E6B282;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+}
+main .projects-section .cards-projects .project .link-name a:hover {
+  color: #E89549;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 70vh;
+}
+footer .left-side-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+  width: 50%;
+  height: 60vh;
+}
+footer .left-side-contact-form h2 {
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+footer .left-side-contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+footer .left-side-contact-form input {
+  font-size: 1.1em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+footer .left-side-contact-form .contact-input {
+  width: 80%;
+  height: 3em;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #E6B282;
+}
+footer .left-side-contact-form .name-input {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+footer .left-side-contact-form .name-input span {
+  width: 90%;
+}
+footer .left-side-contact-form .contact-input-bottom {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+footer .left-side-contact-form .contact-input-bottom span {
+  width: 90%;
+}
+footer .left-side-contact-form .message-label {
+  font-size: 1.2em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+footer .left-side-contact-form .textarea {
+  width: 90%;
+  height: 10em;
+  color: #FFFFFF;
+  font-size: 1.1em;
+}
+footer .right-side-contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  width: 50%;
+  height: 60vh;
+  background-image: url(../Images/Asset\ 1.png);
+  background-position: right;
+  background-size: unset;
+  background-repeat: no-repeat;
+}
+footer .right-side-contact-information h2 {
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  width: 70%;
+}
+footer .right-side-contact-information .email-phone-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+  width: 90%;
+}
+footer .right-side-contact-information .phone-info {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  font-size: 1.3em;
+}
+footer .right-side-contact-information .phone-info a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer .right-side-contact-information .email-info {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  font-size: 1.3em;
+}
+footer .right-side-contact-information .email-info a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer .right-side-contact-information .social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 70%;
+}
+footer .right-side-contact-information .social-icons .social-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

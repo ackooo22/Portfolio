@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+// font-family: "Nunito", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+
+
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --maincolor: #351D4D;
+    --maincolor75: #A67DCE;
+    --secondarycolor: #F2A0D5;
+    --buttoncolor: rgb(255, 186, 222);
+    --font: "Nunito", sans-serif
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+    border: none;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--maincolor75); 
+    border-radius: 10px;
+    border: none;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #260835; 
+}
+
+body {
+    background-color: var(--maincolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5em;
+    font-family: var(--font);
+}
+
+nav {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 20;
+
+    .left {
+        display: flex;
+        justify-content: safety;
+        align-items: center;
+        gap: 40px;
+        width: 50%;
+
+        .burger-menu {
+            button{
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                position: relative;
+                top: 2px;
+                
+                img {
+                    width: 34px;
+                    height: 34px;
+                };
+            }
+        }
+        h1 {
+            color: white;
+            font-size: 2em;
+        }
+
+        #search {
+            width: 30%;
+            height: 38px;
+            font-size: 0.9em;
+            border-radius: 10px;
+        }
+    }
+
+    .right {
+        display: flex;
+        gap: 1em;
+
+        button {
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+
+}
+
+main {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5em;
+
+    // sec-1 main slider with the top films / series
+
+    .sec-1 {
+        width: 99%;
+        
+
+        .slider {
+
+            .slider-cards {
+                display: flex;
+
+                .info {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding-top: 100px;
+                    padding-left: 50px;
+                    gap: 40px;
+                    
+
+                    .title {
+                        p {
+                            color: var(--secondarycolor);
+                        }
+
+                        h1 {
+                            font-weight: 700;
+                            font-size: 2.5em;
+                            padding-top: 10px;
+                            color: white;
+                        }
+                    }
+
+                    .watch-details {
+                        display: flex;
+                        gap: 30px;
+
+                        button {
+                            background-color: transparent;
+                            border: 3px solid rgb(242, 160, 213);
+                            border-radius: 20px;
+                            height: 40px;
+                            padding: 0 20px;
+                            font-size: 1.3em;
+                            color: var(--secondarycolor);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .movie-info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .icons {
+                            display: flex;
+                            gap: 30px;
+
+                            .play {
+                                display: flex;
+                                align-items: center;
+                                color: var(--secondarycolor);
+                                font-size: 1.3em;
+                                gap: 10px;
+                            }
+
+                            .time {
+                                display: flex;
+                                align-items: center;
+                                color: var(--secondarycolor);
+                                font-size: 1.3em;
+                                gap: 10px;
+                            }
+                        }
+
+                        .discription {
+                            color: white;
+                            width: 80%;
+                        }
+                    }
+                }
+
+                .img {
+                    width: 70%;
+
+                    img {
+                        width: 100%;
+                        height: 70vh;
+                    }
+                }
+            }
+
+            .slider-indicator {
+                position: absolute;
+                width: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                top: 600px;
+                left: 70px;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .curcle {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: white;
+
+                }
+
+                .current-slide {
+                    height: 15px;
+                    width: 15px;
+                    background-color: var(--secondarycolor);
+                }
+            }
+        }
+
+    }
+
+    // section 2 popular movies/series/anime
+
+    .sec-2{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // justify-content: flex-start;
+        // align-items: center;
+
+        
+        #h1 {
+            width: 90%;
+            color: white;
+            font-size: 1.8em;
+        }
+
+        .cards {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 60px;
+            overflow: hidden;
+            padding-bottom: 10px;
+            // margin-left: 40px;
+
+            .card {
+                background-color: var(--secondarycolor);
+                width: 200px;
+                // overflow: hidden;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                box-shadow: 5px 5px 10px black;
+                
+                
+                .img img {
+                    width: 200px;
+                    height: 240px;
+                    border-radius: 20px;
+                }
+
+                .info {
+                    display: flex;
+                    gap: 13px;
+                    font-weight: 700;
+                    .type {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                    }
+                    .time {
+                        display: flex;
+                    }
+                }
+                .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10px;
+                    border-top: 2px solid gray;
+                    width: 80%;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-weight: 700;                    
+                }
+            }
+        }
+
+        .next-prev {
+            display: flex;
+            gap: 50px;
+            justify-content: flex-end;
+
+            button{
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+    }
+
+    // sec-3 comments
+
+    .sec-3 {
+        background-color: var(--maincolor75);
+        width: 100%;
+        height: 450px;
+        display: flex;
+        overflow: hidden;
+
+        .left {
+            display: grid;
+            place-items: center;            
+            width: 30%;
+            
+            img {
+                height: 100%;
+            }   
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100%;
+            .top {
+                display: flex;
+                width: 90%;
+                height: 40%;
+                justify-content: space-between;
+                align-items: center;
+                
+                .comments {
+                    display: flex;
+                    gap: 30px;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+                        background-color: transparent;
+                        border: 3px solid rgb(53, 29, 77);
+                        padding: 13px 0;
+                        width: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.2em;
+                        font-weight: 600;
+                        color: var(--maincolor);
+                        border-radius: 30px;
+                    }
+
+                    .top {
+                        border: none;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 30px;
+
+                    button{
+                        background-color: transparent;
+                        border: none;
+                    }
+                }
+            }
+
+            .bottom {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                overflow: hidden;
+                
+                .card-comments {  
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+                    .cards {
+                        height: 90%;
+                        width: 300px;
+                        background-color: var(--secondarycolor);
+                        border-radius: 30px;
+                        box-shadow: 5px 5px 10px black;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+
+                        h3 {
+                            font-weight: 700;
+                            font-size: 1.4em;
+                        }
+
+                        .top {
+                            display: flex;
+                            justify-content: space-around;
+                            height: 20%;
+
+                            .profile {
+                                width: 45px;
+                                height: 45px;
+                                border-radius: 50%;
+                                background-color: gray;
+                            }
+                        }
+
+                        .mid {
+                            width: 270px;
+                            font-weight: 500;
+                        }
+
+                        .bot {
+                            display: flex;
+                            gap: 20px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+    
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 15px 20px;
+
+    .left-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 30px;
+
+        .top-info {
+            font-size: 1.3em;
+            font-weight: 800;
+            color: var(--secondarycolor);
+        }
+
+        .bot-links {
+            display: flex;
+            gap: 10px;
+            
+            
+            a {
+                text-decoration: none;
+                color: var(--secondarycolor);
+                font-size: 1.5em;
+                font-weight: 700;
+                
+            }
+        }
+    }
+
+    .right-footer {
+        display: flex;
+        align-items: last baseline;
+
+        p{
+            color: var(--secondarycolor);
+        }
+    }
+}
+
+

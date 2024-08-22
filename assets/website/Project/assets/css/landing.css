@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --maincolor: #351D4D;
+  --maincolor75: #A67DCE;
+  --secondarycolor: #F2A0D5;
+  --buttoncolor: rgb(255, 186, 222);
+  --font: "Nunito", sans-serif ;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border: none;
+}
+
+/* Track */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--maincolor75);
+  border-radius: 10px;
+  border: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+body {
+  background-color: var(--maincolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  font-family: var(--font);
+}
+
+nav {
+  min-width: 90vw;
+  display: flex;
+  justify-content: flex-end;
+}
+nav .btn {
+  background-color: transparent;
+  width: 13em;
+  height: 3em;
+  border: 2px solid rgb(242, 160, 213);
+  margin: 15px;
+  cursor: pointer;
+}
+nav .btn a {
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+  font-size: 1.5em;
+  font-family: var(--font);
+  font-weight: 500;
+  color: var(--secondarycolor);
+}
+nav .btn:hover {
+  background-color: var(--secondarycolor);
+  box-shadow: 3px 3px 2px black;
+}
+nav .btn:hover a {
+  color: black;
+  text-shadow: 1px 1px rgb(242, 160, 213);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  gap: 8em;
+}
+main .sec-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  gap: 1em;
+}
+main .sec-1 .links {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+}
+main .sec-1 .links a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 1.5em;
+}
+main .sec-1 .links a:hover {
+  color: var(--secondarycolor);
+  font-size: 1.6em;
+}
+main .sec-1 .info-box {
+  display: flex;
+  background-color: var(--secondarycolor);
+  height: 60vh;
+  width: 80%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+main .sec-1 .info-box .info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 4em;
+  z-index: 20;
+}
+main .sec-1 .info-box .info h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-right: 30px;
+}
+main .sec-1 .info-box .info input {
+  margin-top: 50px;
+  margin-right: 30px;
+  height: 3rem;
+  min-width: 70%;
+  border: none;
+  border-radius: 10px;
+  padding-left: 30px;
+  font-size: 1.2em;
+}
+main .sec-1 .info-box .info p {
+  width: 70%;
+  font-family: var(--font);
+  font-weight: 800;
+  font-size: 1em;
+  margin-right: 30px;
+}
+main .sec-1 .info-box .info button {
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 30px;
+  background-color: #42364E;
+  cursor: pointer;
+}
+main .sec-1 .info-box .info button a {
+  color: var(--secondarycolor);
+  text-decoration: none;
+  font-size: 1.8em;
+}
+main .sec-1 .info-box .overlay {
+  width: 60%;
+  box-shadow: 100px 100px 50px hsl(195, 53%, 79%) inset;
+  z-index: 20;
+}
+main .sec-1 .info-box .overlay .img-movies img {
+  position: relative;
+  bottom: 165px;
+  right: 130px;
+  display: block;
+  max-width: 1000px;
+  height: auto;
+}
+main .sec-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+main .sec-2 #h1 h1 {
+  font-size: 2.5em;
+  color: white;
+}
+main .sec-2 .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60vw;
+}
+main .sec-2 .icons #icon {
+  min-width: 94px;
+  height: 74px;
+}
+main .sec-3 {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .sec-3 .links {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+main .sec-3 .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+main .sec-3 .links a:hover {
+  color: var(--secondarycolor);
+  font-size: 1.6em;
+}
+main .sec-3 .cards {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 70%;
+  display: flex;
+  padding: 15px;
+  gap: 25px;
+}
+main .sec-3 .cards .card {
+  background-color: var(--secondarycolor);
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .sec-3 .cards .card .img img {
+  width: 200px;
+  height: 240px;
+}
+main .sec-3 .cards .card .info {
+  display: flex;
+  gap: 13px;
+  font-weight: 700;
+}
+main .sec-3 .cards .card .info .type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sec-3 .cards .card .info .time {
+  display: flex;
+}
+main .sec-3 .cards .card .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-top: 2px solid gray;
+  width: 80%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+main .sec-4 {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .sec-4 .questions {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+}
+main .sec-4 .questions .question {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+}
+main .sec-4 .questions .question p {
+  color: white;
+  font-size: 2.5em;
+}
+main .sec-4 .questions .question button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  background-color: var(--maincolor75);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+footer .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+}
+footer .left-side h1 {
+  font-size: 3em;
+}
+footer .left-side p {
+  position: relative;
+  top: 30px;
+}
+footer .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+}
+footer .right-side img {
+  width: 50%;
+}
+footer .right-side .links {
+  display: flex;
+  gap: 20px;
+}
+footer .right-side .links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.7em;
+}/*# sourceMappingURL=landing.css.map */

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineWave</title>
+    <link rel="stylesheet" href="assets/css/MovieSuggPage.css" type="text/css">
+    
+</head>
+<body>
+    <nav>
+        <!-- Left side containing burger menu logo and search input -->
+        
+        <div class="left">
+
+            <div class="burger-menu">
+                <button><img src="assets/Img/burger-bar.png" alt=""></button>
+            </div>
+            
+            <a href="MovieMainPage.html">Cine~Wave</a>
+            
+            <input type="text" name="search" id="search" placeholder="       Find movies, TV shows and more">
+            <button class="movie-search">search</button>
+        </div>
+
+        <!-- right side containing notifications and profile  -->
+
+        <div class="right">
+
+            <!-- Notifications -->
+
+            <div class="notifications dropdown">
+                <button class="dropdown-btn"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707A.996.996 0 0 0 3 16v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a.996.996 0 0 0-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707A.996.996 0 0 0 7 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zm-7 5a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22z"></path></svg></button>
+                <div class="dropdown-info">
+                    
+                </div>
+            </div>
+
+            <!-- Profile -->
+
+            <div class="profile dropdown">
+                <button class="dropdown-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M13.337 9h-2.838v3h2.838a1.501 1.501 0 1 0 0-3z"></path><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1.337 12h-2.838v3H8.501V7h4.837a3.498 3.498 0 0 1 3.499 3.499 3.499 3.499 0 0 1-3.5 3.501z"></path></svg>
+                </button>
+            </div>    
+        </div>
+    </nav>
+
+    <!-- main start -->
+
+    <main>
+
+        <!-- Section 1 movie random page -->
+
+        <section class="sec-1">
+            <div class="right">
+                <img src="assets/Img/landing page cards/One_Piece_Film_Red_Visual_Poster.png" alt="" id="movie-poster" style="height: 500px;">
+            </div>
+            <div class="left">
+                <div class="title">
+                    <h1 class="movie-name">One Piece: Red</h1>
+                </div>
+                <div class="info">
+                    <div class="type">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" style="fill: rgba(242, 160, 213, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                        <p>Movie</p>
+                    </div>
+                    <div class="time">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" style="fill: rgba(242, 160, 213, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                        <p>1h 55m</p>
+                    </div>
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" style="fill: rgb(255, 230, 0);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                        <p class="rating-num">9.9</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="overview">As a child, Uta—the Red Hair Pirates' ex-musician and Monkey D. Luffy's childhood friend—promised that she would build a new era of freedom by performing joyful music for the world. Luffy and the Straw Hat Crew arrive at Uta's first ever live concert, where many fans have gathered to enjoy the diva's otherworldly singing. Due to a childhood trauma, Uta bears a deep-seated hatred for pirates; her happy reunion with Luffy is cut short when she learns that he has since become one</p>
+                </div>
+                <div class="CTA-btns">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                        Watch Now
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M18 2H6c-1.103 0-2 .897-2 2v18l8-4.572L20 22V4c0-1.103-.897-2-2-2zm0 16.553-6-3.428-6 3.428V4h12v14.553z"></path></svg>
+                        Add to List
+                    </button>
+                    <button class="random-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M17 17h-1.559l-9.7-10.673A1 1 0 0 0 5.001 6H2v2h2.559l4.09 4.5-4.09 4.501H2v2h3.001a1 1 0 0 0 .74-.327L10 13.987l4.259 4.686a1 1 0 0 0 .74.327H17v3l5-4-5-4v3z"></path><path d="M15.441 8H17v3l5-3.938L17 3v3h-2.001a1 1 0 0 0-.74.327l-3.368 3.707 1.48 1.346L15.441 8z"></path></svg>
+                        Random
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-2">
+            <div id="h1">
+                <h1>Related</h1>
+            </div>
+            <div class="cards">
+                <!-- First card -->
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/One_Piece_Film_Red_Visual_Poster.png" alt="onePiece"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 55m</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>One Piece: Red</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/Img/landing page cards/223x324_DUNE2_MKD.jpg" alt="dune">
+                    </div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>2h 46m</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Dune 2</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/5qHoazZiaLe7oFBok7XlUhg96f2.png" alt="AnyoneBut you"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 43m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Anyone But You</p></div>
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/BEEKEPER.png" alt="Beekeeper"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 45m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>The Beekeeper</p></div>
+                </div>
+
+                <!-- Card 5 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/haikyuu movie..png" alt="Haikyuu"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 25m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Haikyuu</p></div>
+                </div>
+
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+                
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+            </div>
+            <div class="next-prev">
+                <button id="left"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" style="fill: rgba(242, 160, 213, 1);"><path d="M11.999 1.993C6.486 1.994 2 6.48 1.999 11.994c0 5.514 4.486 10 10.001 10 5.514-.001 10-4.487 10-10 0-5.514-4.486-10-10.001-10.001zM12 19.994c-4.412 0-8.001-3.589-8.001-8 .001-4.411 3.59-8 8-8.001C16.411 3.994 20 7.583 20 11.994c0 4.41-3.589 7.999-8 8z"></path><path d="m12.012 7.989-4.005 4.005 4.005 4.004v-3.004h3.994v-2h-3.994z"></path></svg></button>
+                <button id="right"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" style="fill: rgba(242, 160, 213, 1);"><path d="M11.999 1.993c-5.514.001-10 4.487-10 10.001s4.486 10 10.001 10c5.513 0 9.999-4.486 10-10 0-5.514-4.486-10-10.001-10.001zM12 19.994c-4.412 0-8.001-3.589-8.001-8s3.589-8 8-8.001C16.411 3.994 20 7.583 20 11.994c-.001 4.411-3.59 8-8 8z"></path><path d="M12 10.994H8v2h4V16l4.005-4.005L12 7.991z"></path></svg></button>
+            </div>
+        </section>
+        <section class="sec-2">
+            <div id="h1">
+                <h1>Random</h1>
+            </div>
+            <div class="cards">
+                <!-- First card -->
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/One_Piece_Film_Red_Visual_Poster.png" alt="onePiece"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 55m</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>One Piece: Red</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+                    <div class="img">
+                        <img src="assets/Img/landing page cards/223x324_DUNE2_MKD.jpg" alt="dune">
+                    </div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>2h 46m</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Dune 2</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/5qHoazZiaLe7oFBok7XlUhg96f2.png" alt="AnyoneBut you"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 43m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Anyone But You</p></div>
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/BEEKEPER.png" alt="Beekeeper"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 45m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>The Beekeeper</p></div>
+                </div>
+
+                <!-- Card 5 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/haikyuu movie..png" alt="Haikyuu"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 25m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Haikyuu</p></div>
+                </div>
+
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+                
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+                <!-- Card 6 -->
+
+                <div class="card">
+                    <div class="img"><img src="assets/Img/landing page cards/kung fu panda.jpg" alt="Panda"></div>
+                    <div class="info">
+                        <div class="type">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>
+                            <p>Movie</p>
+                        </div>
+                        <div class="time">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v6h6v-2h-4z"></path></svg>
+                            <p>1h 34m</p>
+                        </div>
+                    </div>
+                    <div class="title"><p>Kung Fu Panda 4</p></div>
+                </div>
+            </div>
+            <div class="next-prev">
+                <button id="left"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" style="fill: rgba(242, 160, 213, 1);"><path d="M11.999 1.993C6.486 1.994 2 6.48 1.999 11.994c0 5.514 4.486 10 10.001 10 5.514-.001 10-4.487 10-10 0-5.514-4.486-10-10.001-10.001zM12 19.994c-4.412 0-8.001-3.589-8.001-8 .001-4.411 3.59-8 8-8.001C16.411 3.994 20 7.583 20 11.994c0 4.41-3.589 7.999-8 8z"></path><path d="m12.012 7.989-4.005 4.005 4.005 4.004v-3.004h3.994v-2h-3.994z"></path></svg></button>
+                <button id="right"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" style="fill: rgba(242, 160, 213, 1);"><path d="M11.999 1.993c-5.514.001-10 4.487-10 10.001s4.486 10 10.001 10c5.513 0 9.999-4.486 10-10 0-5.514-4.486-10-10.001-10.001zM12 19.994c-4.412 0-8.001-3.589-8.001-8s3.589-8 8-8.001C16.411 3.994 20 7.583 20 11.994c-.001 4.411-3.59 8-8 8z"></path><path d="M12 10.994H8v2h4V16l4.005-4.005L12 7.991z"></path></svg></button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Cine~Wave</h1>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/JavaScript/Js.js"></script>
+</body>
+</html>
