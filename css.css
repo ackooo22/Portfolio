@@ -68,14 +68,15 @@ body {
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            gap: 2rem;
             
 
             .left-side-about{
-                width: 50%;
+                width: 40%;
             }
 
             .right-side-img{
-                width: 50%;
+                width: 40%;
             }
 
         }
